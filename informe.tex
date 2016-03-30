@@ -13,9 +13,6 @@
 En este laboratorio se buscó reconocer la composición de la red del laboratorio de Informática, identificando el hardware de red y los elementos que forman parte de ella, ya sean computadores, routers, switch, cables, etc. Se realizó también un diagrama de red, el cual especifica la información de los dispositivos que forman parte de esta (IP y MAC de cada uno)"agregar"(lo que escriba yo no lo tomen en cuenta si sienten que esta mal! :c  Se realizó también un diagrama de red, el cual especifica la información tanto de los pc´s(IP y MAC de cada uno ), la informacion de el switch y path.)
 \chapter{Actividades}
 \section{Identificación de elementos de red}
-"otra vez"(Para poder identificar el IP y MAC de cada computador, fue necesario abrir la terminal de cada Pc.(intentare ir al lab para sacar una imagen del terminal me la mandare a mi correo y luego le marcare la parte en donde esta la ip y el MAc))
-El laboratorio cuenta con 18 computadores HP modelo EliteDesk 800 G1, conectados con cables UTP categoría 5e a un a un switch Cisco Catalyst 2960 el cual a su vez está conectado a un patch panel"revisar"(para luego ser conectador ordenadamente en el switch y ver un mejor orden al momento de ver alguna falla en algun dispositivo).
-\section{Información de los dispositivos}
 "{\bf-Tipo:} Computador de escritorio\\
 {\bf-Modelo:}  HP EliteDesk 800 G1 con factor de forma reducido (ENERGY STAR)
 (K6P73LT)\\
@@ -62,7 +59,14 @@ Características de red: LAN\\
 Color del producto: Negro\\
 Materiales: Metal\\
 Montaje en rack: 1U\\"
-%Aca deberia ir el modelo de el path y el swtich tambien el modelo de los cables conectados uno a uno con el switch
+\section{Información de los dispositivos}
+Para esta actividad abrimos un terminal y ejecutamos el comando "ifconfig" y se desplegó lo siguiente:\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Terminal.png}
+\end{figure}
+(imagen referencial tomada de otro laboratorio.)\\
+Si observamos la imagen lo que está encerrado en un círculo rojo representa la MAC del equipo y lo encerrado en un círculo azul representa la IP del mismo. Al repetir este proceso en cada uno de los computadores de la sala nos dimos cuenta que tanto la MAC como la IP seguían un patrón, en el caso de la MAC los 3 primeros pares de caracteres eran iguales en todos los equipos, esto nos dice que las tarjetas de red de todos ellos son del mismo fabricante, el prefijo que se repite es el 40:A8:F0 por lo tanto pudimos llegar a la conclusión de que Hewlett Packard es el fabricante de estas. En el caso de la dirección IP de los computadores solo diferían en los 3 últimos dígitos, ya que al ser una red interna el último número de la dirección debe ser distinto para cada equipo para de esta manera identificar a cada uno.
 \section{Diagrama de red}
 \includegraphics[width=\textwidth]{diag.png}
 Como se observa en el diagrama de red los computadores estan conectados por el cable de red uno por uno 
