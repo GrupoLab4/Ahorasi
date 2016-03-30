@@ -10,76 +10,74 @@
 \maketitle
 \tableofcontents % Despliega el índice
 \chapter{Introducción}
-En este laboratorio se buscó reconocer la composición de la red del laboratorio de Informática, identificando el hardware de red y los elementos que forman parte de ella, ya sean computadores, routers, switch, cables, etc. Se realizó también un diagrama de red, el cual especifica la información de los dispositivos que forman parte de esta (IP y MAC de cada uno)"agregar"(lo que escriba yo no lo tomen en cuenta si sienten que esta mal! :c  Se realizó también un diagrama de red, el cual especifica la información tanto de los pc´s(IP y MAC de cada uno ), la informacion de el switch y path.)
+	En este laboratorio se buscó reconocer la composición de la red del laboratorio de Informática, identificando el hardware de red y los elementos que forman parte de ella, ya sean computadores, routers, switch, cables, etc. Se realizó también un diagrama de red, el cual especifica la información de los dispositivos que forman parte de esta.
 \chapter{Actividades}
-\section{Identificación de elementos de red}
-"{\bf-Tipo:} Computador de escritorio\\
-{\bf-Modelo:}  HP EliteDesk 800 G1 con factor de forma reducido (ENERGY STAR)
-(K6P73LT)\\
-{\bf-Especificaciones:} Procesador:
-Intel® Core™ i7-4790 con gráficos Intel HD 4600 (3,6 GHz, 8 MB de caché, 4 núcleos)\\
-Memoria, estándar:
-SDRAM DDR3 de 8 GB y 1600 MHz (1 x 8 GB)\\
-Unidad interna:
-SATA de 1 TB y 7200 rpm\\
-Unidad óptica:
-Grabadora SATA de DVD SuperMulti delgada\\
-Gráficos:
-Gráficos Intel HD 4600\\
-Interfaz de red:
-Conexión de red Intel I217LM GbE integrada\\
-{\bf-Tipo:} Switch\\
-{\bf-Modelo:} Cisco Catalyst 2960-24TT-L Switch\\
-{\bf-Especificaciones:}Compatibilidad:
-Modulo convertidor TwinGig\\
-Fecha de salida:
-18 de Septiembre de 2005\\
-Dimensiones:
-4.4 x 44.5 x 23.6 cm\\
-Paquetes por segundo(Mpps):
-6.6\\
-Watt Power Consumption:	
-75\\
-AC/DC Support:
-AC only\\
-{\bf-Tipo:}Cable de conexion a red\\
-{\bf-Modelo:}Fastlink 5e\\
-{\bf-Especificaciones:}Cubierta y pares sin apantallar.\\
-Excede los requerimientos propuestos por la normativa TIA /EIA 568 B .2 ,ISO/IEC 11801 Categoría 5E.\\
-Retardante a la llama y cero halógenos según el Standard IEC 60332-3 Cat C.\\
-Soporta aplicaciones de hasta 125 MHz de ancho de banda.\\
-Codificación de colores para cada uno de los pares\\
-Distribuido en cajas de 305 m con bobina interna para facilitar el tendido del cable.\\
-Cumple con las normativas de medioambiente CE y RoHS.\\
-{\bf-Tipo:} Patch Panel\\
-{\bf-Modelo:} Siemon HD5-24 Cat 5e 24 puertos\\
-{\bf-Especificaciones:}Estándares de red: IEEE 802.3, IEEE 802.3ab, IEEE 802.3u\\
-Tecnología de cableado: 10/100/1000Base-T(X)\\
-Características de red: LAN\\
-Color del producto: Negro\\
-Materiales: Metal\\
-Montaje en rack: 1U\\"
-\section{Información de los dispositivos}
-Para esta actividad abrimos un terminal y ejecutamos el comando "ifconfig" y se desplegó lo siguiente:\\
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{Terminal.png}
-\end{figure}
-(imagen referencial tomada de otro laboratorio.)\\
-Si observamos la imagen lo que está encerrado en un círculo rojo representa la MAC del equipo y lo encerrado en un círculo azul representa la IP del mismo. Al repetir este proceso en cada uno de los computadores de la sala nos dimos cuenta que tanto la MAC como la IP seguían un patrón, en el caso de la MAC los 3 primeros pares de caracteres eran iguales en todos los equipos, esto nos dice que las tarjetas de red de todos ellos son del mismo fabricante, el prefijo que se repite es el 40:A8:F0 por lo tanto pudimos llegar a la conclusión de que Hewlett Packard es el fabricante de estas. En el caso de la dirección IP de los computadores solo diferían en los 3 últimos dígitos, ya que al ser una red interna el último número de la dirección debe ser distinto para cada equipo para de esta manera identificar a cada uno.
-\section{Diagrama de red}
-\includegraphics[width=\textwidth]{diag.png}
-Como se observa en el diagrama de red los computadores estan conectados por el cable de red uno por uno 
-a van conectados a el patch, el cual hara que los cables se ubiquen con una mejor distribucion fisica 
-en el espacio.\\
-Gracias a esta descripcion se plantea que la topologia utilizada en el laboratorio de informática
-Este sistema es muy costoso siendo comparado junto con las topologias de anillo o tren, ya que para poder
-conectar cada dispositivo a el switch se necesita un cable nuevo de el mismo tamaño,pero al mismo tiempo
-aporta una caracteristica muy importante la cual es una facil deteccion de problemas y si es que algun
-cable de red se llegara a romper o a tener problemas solo perdera la conexión  ese dispositivo.Aun así 
-si es que el switch llegara a dañarse de alguna forma esto afectaria a el sistema completo ya que solo
-depende de éste.
-
+	\section{Identificación de elementos de red}
+		"{\bf-Tipo:} Computador de escritorio\\
+		{\bf-Modelo:}  HP EliteDesk 800 G1 con factor de forma reducido (ENERGY STAR)
+		(K6P73LT)\\
+		{\bf-Especificaciones:} Procesador:
+		Intel® Core™ i7-4790 con gráficos Intel HD 4600 (3,6 GHz, 8 MB de caché, 4 núcleos)\\
+		Memoria, estándar:
+		SDRAM DDR3 de 8 GB y 1600 MHz (1 x 8 GB)\\
+		Unidad interna:
+		SATA de 1 TB y 7200 rpm\\
+		Unidad óptica:
+		Grabadora SATA de DVD SuperMulti delgada\\
+		Gráficos:
+		Gráficos Intel HD 4600\\
+		Interfaz de red:
+		Conexión de red Intel I217LM GbE integrada\\
+		{\bf-Tipo:} Switch\\
+		{\bf-Modelo:} Cisco Catalyst 2960-24TT-L Switch\\
+		{\bf-Especificaciones:}Compatibilidad:
+		Modulo convertidor TwinGig\\
+		Fecha de salida:
+		18 de Septiembre de 2005\\
+		Dimensiones:
+		4.4 x 44.5 x 23.6 cm\\
+		Paquetes por segundo(Mpps):
+		6.6\\
+		Watt Power Consumption:	
+		75\\
+		AC/DC Support:
+		AC only\\
+		{\bf-Tipo:}Cable de conexion a red\\
+		{\bf-Modelo:}Fastlink 5e\\
+		{\bf-Especificaciones:}Cubierta y pares sin apantallar.\\
+		Excede los requerimientos propuestos por la normativa TIA /EIA 568 B .2 ,ISO/IEC 11801 Categoría 5E.\\
+		Retardante a la llama y cero halógenos según el Standard IEC 60332-3 Cat C.\\
+		Soporta aplicaciones de hasta 125 MHz de ancho de banda.\\
+		Codificación de colores para cada uno de los pares\\
+		Distribuido en cajas de 305 m con bobina interna para facilitar el tendido del cable.\\
+		Cumple con las normativas de medioambiente CE y RoHS.\\
+		{\bf-Tipo:} Patch Panel\\
+		{\bf-Modelo:} Siemon HD5-24 Cat 5e 24 puertos\\
+		{\bf-Especificaciones:}Estándares de red: IEEE 802.3, IEEE 802.3ab, IEEE 802.3u\\
+		Tecnología de cableado: 10/100/1000Base-T(X)\\
+		Características de red: LAN\\
+		Color del producto: Negro\\
+		Materiales: Metal\\
+		Montaje en rack: 1U\\"
+	\section{Información de los dispositivos}
+		Para esta actividad abrimos un terminal y ejecutamos el comando "ifconfig" y se desplegó lo siguiente:\\
+		\begin{figure}[h]
+    		\centering
+    	\includegraphics[width=\textwidth]{Terminal.png}
+		\end{figure}
+		(imagen referencial tomada de otro laboratorio.)\\
+		Si observamos la imagen lo que está encerrado en un círculo rojo representa la MAC del equipo y lo encerrado en un         círculo azul representa la IP del mismo. Al repetir este proceso en cada uno de los computadores de la sala nos            dimos cuenta que tanto la MAC como la IP seguían un patrón, en el caso de la MAC los 3 primeros pares de caracteres         eran iguales en todos los equipos, esto nos dice que las tarjetas de red de todos ellos son del mismo fabricante,          el prefijo que se repite es el 40:A8:F0 por lo tanto pudimos llegar a la conclusión de que Hewlett Packard es el           fabricante de estas. En el caso de la dirección IP de los computadores solo diferían en los 3 últimos dígitos, ya          que al ser una red interna el último número de la dirección debe ser distinto para cada equipo para de esta manera         identificar a cada uno.
+	\section{Diagrama de red}
+		\includegraphics[width=\textwidth]{diag.png}
+		Como se observa en el diagrama de red los computadores estan conectados por el cable de red uno por uno 
+		a van conectados a el patch, el cual hara que los cables se ubiquen con una mejor distribucion fisica 
+		en el espacio.\\
+		Gracias a esta descripcion se plantea que la topologia utilizada en el laboratorio de informática
+		Este sistema es muy costoso siendo comparado junto con las topologias de anillo o tren, ya que para poder
+		conectar cada dispositivo a el switch se necesita un cable nuevo de el mismo tamaño,pero al mismo tiempo
+		aporta una caracteristica muy importante la cual es una facil deteccion de problemas y si es que algun
+		cable de red se llegara a romper o a tener problemas solo perdera la conexión  ese dispositivo.Aun así 
+		si es que el switch llegara a dañarse de alguna forma esto afectaria a el sistema completo ya que solo
+		depende de éste.
 \chapter{Conclusión}
-%Texto
 \end{document}
